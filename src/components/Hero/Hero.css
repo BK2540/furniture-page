@@ -1,0 +1,156 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-contents{
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../../assets/hero-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+}
+
+.hero-contents_info{
+    background-color: #DFE9F4;
+    width: 38rem;
+    height: max-content;
+    border-radius: 10px;
+
+    padding: 2.5rem;
+    gap: 1.25rem;
+
+    position: absolute;
+    top: 9rem;
+    right: 5rem;
+}
+
+.hero-contents_info>span:nth-child(1){
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-600);
+}
+
+.hero-contents_info>span:nth-child(2){
+    font-size: 3.25rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.hero-contents_info>span:nth-child(3){
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--black-600);
+}
+
+.hero-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7.5rem;
+    gap: 1.2rem;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.service>img{
+    width: 3rem;
+    height: 3rem;
+}
+.service-info{
+    gap: 0.5rem;
+}
+
+.service-info>span:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black-600);    
+}
+
+.service-info>span:nth-child(2){
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black-400);    
+}
+
+@media screen and (max-width:1024px){
+    .hero-contents_info{
+        background-size: auto;
+        width: 32rem;
+        height: max-content;
+        
+        position: absolute;
+        top: 4rem;
+    }
+
+    .hero-services{
+        justify-content: space-between;
+        padding: 2rem 1rem;
+    }
+    .service>img{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .service-info>span:nth-child(1){
+        font-size: 1rem;  
+    }
+    
+    .service-info>span:nth-child(2){
+        font-size: small;  
+    }
+}
+
+@media screen and (max-width:750px){
+    
+   
+}
+
+@media screen and (max-width:550px){
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-contents_info{
+        width: 16rem;
+        height: max-content;
+
+        justify-content: center;
+        align-items: center;
+        
+    }
+      
+    .hero-contents_info>span:nth-child(2){
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+    
+    .hero-contents_info>span:nth-child(3){
+        font-size: 1rem;
+    }
+
+    .hero-services{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+

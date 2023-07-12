@@ -1,0 +1,122 @@
+.footer{
+    padding: 3.75rem 8rem;
+    background-color: var(--dark-blue);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contents{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin-right: 2rem;
+}
+
+.footer-contents>span:nth-child(1),
+.footer-contents>span:nth-child(3){
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-contents>span:nth-child(2){
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.footer-line{
+    height: 22rem;
+    width: 1px;
+    background-color: white;
+    opacity: 0.6;
+    margin: 1rem;
+}
+
+.footer-instagram{
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-instagram_img{
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width:1024px){
+    .footer{
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+
+        gap: 6rem;
+    }
+
+    .footer-line{
+        display: none;
+    }
+
+    .footer-instagram_img{
+        padding: 5rem 0;
+    }
+        
+}
+
+@media screen and (max-width:780px){
+
+    .footer-instagram{
+        padding: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-instagram_img{
+        display: flex;
+        flex-direction: row;
+
+        padding: 2rem 0;
+    }
+
+    .footer-instagram_img>img{
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .footer-instagram{
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-instagram_img{
+        display: flex;
+        flex-direction: column;
+
+        padding: 2rem 0;
+    }
+
+    .footer-instagram_img>img{
+        width: 300px;
+        height: 300px;
+        border-radius: 8px;
+    }
+}
